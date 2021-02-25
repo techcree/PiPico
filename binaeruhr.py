@@ -73,7 +73,7 @@
 #	17	"="	10+4+2+1
 #	18	"="	10+8
 #	19	"="	10+8+1
-#	20	"="	10+8+2
+#	20	"="	20
 #	21	"="	20+1
 #	22	"="	20+2
 #	23	"="	20+1+2
@@ -93,7 +93,7 @@
 #	37	"="	10+20++4+2+1
 #	38	"="	10+20++8
 #	39	"="	10+20++8+1
-#	40	"="	10+20++8+2
+#	40	"="	40
 #	41	"="	40+1
 #	42	"="	40+2
 #	43	"="	40+1+2
@@ -103,7 +103,7 @@
 #	47	"="	40+4+2+1
 #	48	"="	40+8
 #	49	"="	40+8+1
-#	50	"="	40+8+2
+#	50	"="	40+10
 #	51	"="	10+40+1
 #	52	"="	10+40+2
 #	53	"="	10+40+1+2
@@ -113,7 +113,7 @@
 #	57	"="	10+40+4+2+1
 #	58	"="	10+40+8
 #	59	"="	10+40+8+1
-#	60	"="	10+40+8+2
+#	60	"="	20+40
 #
 # Stunden ###
 #	1	"="	1
@@ -188,134 +188,244 @@ while True:
       led25.value(0)
       
      # Starten der Uhr
+### Minuten Routine 60 Minuten     
 ## Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
      # jetzt alle LED/Pins zurücksetzen/ausschalten
-      led1.value(0)
-      led2.value(0)
-      led3.value(0)
-      led4.value(0)
-      led5.value(0)
-      led6.value(0)
-      led7.value(0)
-      led8.value(0)
-      led9.value(0)
-      led10.value(0)
-      led11.value(0)
-      led12.value(0)
-      led13.value(0)
-      led14.value(0)
-      led15.value(0)
-      led16.value(0)
-      led17.value(0)
-      led18.value(0)
-      led19.value(0)
-      led20.value(0)
-      led21.value(0)
-      led22.value(0)
-      led23.value(0)
       led24.value(0)
-      led25.value(0)
 ##  Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
      # jetzt alle LED/Pins zurücksetzen/ausschalten
-      led1.value(0)
-      led2.value(0)
-      led3.value(0)
-      led4.value(0)
-      led5.value(0)
-      led6.value(0)
-      led7.value(0)
-      led8.value(0)
-      led9.value(0)
-      led10.value(0)
-      led11.value(0)
-      led12.value(0)
-      led13.value(0)
-      led14.value(0)
-      led15.value(0)
-      led16.value(0)
-      led17.value(0)
-      led18.value(0)
       led19.value(0)
-      led20.value(0)
-      led21.value(0)
-      led22.value(0)
-      led23.value(0)
-      led24.value(0)
-      led25.value(0)
 ##  Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
-      led1.value(0)
-      led2.value(0)
-      led3.value(0)
-      led4.value(0)
-      led5.value(0)
-      led6.value(0)
-      led7.value(0)
-      led8.value(0)
-      led9.value(0)
-      led10.value(0)
-      led11.value(0)
-      led12.value(0)
-      led13.value(0)
-      led14.value(0)
-      led15.value(0)
-      led16.value(0)
-      led17.value(0)
-      led18.value(0)
       led19.value(0)
-      led20.value(0)
-      led21.value(0)
-      led22.value(0)
-      led23.value(0)
       led24.value(0)
-      led25.value(0)
-##   Minute 4  
-    led14.value(1)	#	4	14	GP14	
+ ##   Minute 4  
+      led14.value(1)	#	4	14	GP14	
 ##   Minute 5    
-    led14.value(1)	#	5	14	GP14	
-    led24.value(1)	#		24	GP27	
+      led14.value(1)	#	5	14	GP14	
+      led24.value(1)	#		24	GP27	
 ##   Minute 6    
-    led14.value(1)	#	6	14	GP14	
-    led19.value(1)	#		19	GP19	
+      led14.value(1)	#	6	14	GP14	
+      led19.value(1)	#		19	GP19	
 ##   Minute 7    
-    led14.value(1)	#	7	14	GP14	
-    led19.value(1)	#		19	GP19	
-    led24.value(1)	#		24	GP27	
+      led14.value(1)	#	7	14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
 ##   Minute 8    
-    led9.value(1)	#	8	9	GP9	
+      led9.value(1)	#	8	9	GP9	
 ##   Minute 9    
-    led9.value(1)	#	9	9	GP9	
-    led24.value(1)	#		24	GP27	
+      led9.value(1)	#	9	9	GP9	
+      led24.value(1)	#		24	GP27	
 ##   Minute 10
-    led23.value(1)	#	10	23	GP26	
+      led23.value(1)	#	10	23	GP26	
 ##   Minute 11    
-led	23	.value(1)	#	11	23	GP26	
-led	24	.value(1)	#		24	GP27	
+      led23.value(1)	#	11	23	GP26	
+      led24.value(1)	#		24	GP27	
 ##   Minute 12
-led	23	.value(1)	#	12	23	GP26	
-led	19	.value(1)	#		19	GP19	
+      led23.value(1)	#	12	23	GP26	
+      led19.value(1)	#		19	GP19	
 ##   Minute 13 
-led	23	.value(1)	#	13	23	GP26	
-led	24	.value(1)	#		24	GP27	
-led	19	.value(1)	#		19	GP19	
+      led23.value(1)	#	13	23	GP26	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
 ##   Minute 14
-led	23	.value(1)	#	14	23	GP26	
-led	14	.value(1)	#		14	GP14	
+      led23.value(1)	#	14	23	GP26	
+      led14.value(1)	#		14	GP14	
 ##   Minute 15 
-led	23	.value(1)	#	15	23	GP26	
-led	14	.value(1)	#		14	GP14	
-led	24	.value(1)	#		24	GP27	
+      led23.value(1)	#	15	23	GP26	
+      led14.value(1)	#		14	GP14	
+      led24.value(1)	#		24	GP27	
 ##   Minute 16
-led	23	.value(1)	#	16	23	GP26	
-led	14	.value(1)	#		14	GP14	
-led	19	.value(1)	#		19	GP19	
+      led23.value(1)	#	16	23	GP26	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+## Minute 17
+      led23.value(1)	#	17	23	GP26	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 18
+      led23.value(1)	#	18	23	GP26	
+      led9.value(1)	#		9	GP9	
+## Minute 19
+      led23.value(1)	#	19	23	GP26	
+      led9.value(1)	#		9	GP9	
+      led24.value(1)	#		24	GP27	
+## Minute 20
+      led18.value(1)	#	20	18	GP18	
+## Minute 21
+      led16.value(1)	#	21	16	GP16	
+      led24.value(1)	#		24	GP27	
+## Minute 22
+      led16.value(1)	#	22	16	GP18	
+      led19.value(1)	#		19	GP19	
+## Minute 23
+      led16.value(1)	#	23	16	GP18	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 24
+      led18.value(1)	#	24	18	GP18	
+      led14.value(1)	#		14	GP14	
+## Minute 25
+      led18.value(1)	#	25	18	GP18	
+      led14.value(1)	#		14	GP14	
+      led24.value(1)	#		24	GP27	
+## Minute 26
+      led18.value(1)	#	26	18	GP18	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+## Minute 27
+      led18.value(1)	#	27	18	GP18	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 28
+      led18.value(1)	#	28	18	GP18	
+      led9.value(1)	#		9	GP9	
+## Minute29
+      led18.value(1)	#	29	18	GP18	
+      led9.value(1)	#		9	GP9	
+      led24.value(1)	#		24	GP27	
+## Minute 30
+      led23	.value(1)	#	30	23	GP26	
+      led18	.value(1)	#		18	GP18	
+## Minute 31
+      led23.value(1)	#	31	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led24.value(1)	#		24	GP27	
+## Minute 32
+      led23.value(1)	#	32	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led19.value(1)	#		19	GP19	
+## Minute 33
+      led23.value(1)	#	33	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
+## Minute 34
+      led23.value(1)	#	34	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led14.value(1)	#		14	GP14	
+## Minute 35
+      led23.value(1)	#	35	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led14.value(1)	#		14	GP14	
+      led24.value(1)	#		24	GP27	
+## Minute 36
+      led23.value(1)	#	36	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+## Minute 37
+      led23.value(1)	#	37	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 38
+      led23.value(1)	#	38	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led9.value(1)	#		9	GP9	
+## Minute 39
+      led23.value(1)	#	39	23	GP26	
+      led18.value(1)	#		18	GP18	
+      led9.value(1)	#		9	GP9	
+      led24.value(1)	#		24	GP27	
+## Minute 40
+      led13.value(1)	#	40	13	GP13	
+## Minute 41
+      led13.value(1)	#	41	13	GP13	
+      led24.value(1)	#		24	GP27	
+## Minute 42
+      led13.value(1)	#	42	13	GP13	
+      led19.value(1)	#		19	GP19	
+## Minute 43
+      led13.value(1)	#	43	13	GP13	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
+## Minute 44
+      led13.value(1)	#	44	13	GP13	
+      led14.value(1)	#		14	GP14	
+## Minute 45
+      led13.value(1)	#	45	13	GP13	
+      led14.value(1)	#		14	GP14	
+      led24.value(1)	#		24	GP27	
+## Minute 46
+      led13.value(1)	#	46	13	GP13	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
+## Minute 47
+      led13.value(1)	#	47	13	GP13	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 48
+      led13.value(1)	#	48	13	GP13	
+      led9.value(1)	#		9	GP9	
+## Minute 49
+      led13.value(1)	#	49	13	GP13	
+      led9.value(1)	#		9	GP9	
+      led24.value(1)	#		24	GP27	
+## Minute 50
+      led13.value(1)	#	50	13	GP13	
+      led23.value(1)	#		23	GP26	
+## Minute 51
+      led13.value(1)	#	51	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led24.value(1)	#		24	GP27	
+## Minute 52
+      led13.value(1)	#	52	13	GP13	
+      led19.value(1)	#		19	GP19	
+      led13.value(1)	#		13	GP13	
+## Minute 53
+      led23.value(1)	#	53	23	GP26	
+      led23.value(1)	#		23	GP26	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
+## Minute 54
+      led13.value(1)	#	54	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led14.value(1)	#		14	GP14	
+## Minute 55
+      led13.value(1)	#	55	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led14.value(1)	#		14	GP14	
+      led24.value(1)	#		24	GP27	
+## Minute 56
+      led13.value(1)	#	56	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led24.value(1)	#		24	GP27	
+      led19.value(1)	#		19	GP19	
+## Minute 57
+      led13.value(1)	#	57	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led14.value(1)	#		14	GP14	
+      led19.value(1)	#		19	GP19	
+      led24.value(1)	#		24	GP27	
+## Minute 58
+      led13.value(1)	#	58	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led9.value(1)	#		9	GP9	
+## Minute 59
+      led13.value(1)	#	59	13	GP13	
+      led23.value(1)	#		23	GP26	
+      led9.value(1)	#		9	GP9	
+      led24.value(1)	#		24	GP27	
+## Minute 60
+      led18.value(1)	#	60	18	GP18	
+      led13.value(1)	#		13	GP13	
+
+### Stunde 1
+      led22.value(1)	#	1	22	GP22	
+## Minute 1
+
 
 ##### und so weiter...
