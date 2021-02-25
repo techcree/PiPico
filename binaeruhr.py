@@ -31,25 +31,25 @@
 #	3	  	GP3				wird nicht benötigt		
 #	4	  	GP4				wird nicht benötigt		
 #	5	  	GP5				wird nicht benötigt		
-#	6 	 	GP6		    8	Stunden	10 'er	
-#	7	  	GP7		  	8	Stunden		
-#	8	  	GP8		   	8	Minuten	10 'er	
-#	9	   GP9		  	8	Minuten		
+#	6 	 	GP6		  8	Stunden	10 'er	
+#	7	  	GP7		  8	Stunden		
+#	8	  	GP8		  8	Minuten	10 'er	
+#	9	   GP9		  8	Minuten		
 #	10		GP10				wird nicht benötigt		
-#	11		GP11			4	Stunden	10 'er	
-#	12		GP12			4	Stunden		
-#	13		GP13			4	Minuten	10 'er	
-#	14		GP14			4	Minuten		
+#	11		GP11			 4	Stunden	10 'er	
+#	12		GP12			 4	Stunden		
+#	13		GP13			 4	Minuten	10 'er	
+#	14		GP14			 4	Minuten		
 #	15		GP15				wird nicht benötigt		
-#	16		GP16			2	Stunden	10 'er	
-#	17		GP17			2	Stunden		
-#	18		GP18			2	Minuten	10 'er	
-#	19		GP19			2	Minuten		
+#	16		GP16			 2	Stunden	10 'er	
+#	17		GP17			 2	Stunden		
+#	18		GP18			 2	Minuten	10 'er	
+#	19		GP19			 2	Minuten		
 #	20		GP20				wird nicht benötigt		
-#	21		GP21			1	Stunden	10 'er	
-#	22		GP22			1	Stunden		
-#	23		GP26			1	Minuten	10 'er	
-#	24		GP27			1	Minuten		
+#	21		GP21			 1	Stunden	10 'er	
+#	22		GP22			 1	Stunden		
+#	23		GP26			 1	Minuten	10 'er	
+#	24		GP27			 1	Minuten		
 #	25		GP28				wird nicht benötigt		
 #
 # Binaeruhr Umsetzung
@@ -2386,7 +2386,7 @@ while True:
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -2463,7 +2463,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-##   Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -2746,7 +2746,7 @@ while True:
       utime.sleep(60)
      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##    Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
      # jetzt alle LED/Pins zurücksetzen/ausschalten
@@ -6830,18 +6830,18 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 12 Led ausschalten 
-     led21.value(0)	#	12	21
-     led17.value(0)	#		17
+      led21.value(0)	#	12	21
+      led17.value(0)	#		17
   ### Stunde 13 
-     led21.value(1)	#	13	21
-     led17.value(1)	#		17
-     led22.value(1)	#		22
+      led21.value(1)	#	13	21
+      led17.value(1)	#		17
+      led22.value(1)	#		22
    # Minuten ##
  ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
  ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
@@ -6948,7 +6948,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -6959,14 +6959,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -6975,26 +6975,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -7003,14 +7003,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -7019,7 +7019,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7028,7 +7028,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7039,14 +7039,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -7055,14 +7055,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -7071,7 +7071,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -7080,18 +7080,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7100,7 +7100,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7111,7 +7111,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7122,7 +7122,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7135,7 +7135,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -7144,7 +7144,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -7155,26 +7155,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -7183,14 +7183,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -7199,7 +7199,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -7208,7 +7208,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7219,14 +7219,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -7235,14 +7235,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -7251,7 +7251,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -7260,18 +7260,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -7280,7 +7280,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -7291,18 +7291,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -7315,7 +7315,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -7324,7 +7324,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -7335,7 +7335,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -7343,25 +7343,25 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 13 Led ausschalten 
-     led21.value(0)	#	13	21
-     led17.value(0)	#		17
-     led22.value(0)	#		22
+      led21.value(0)	#	13	21
+      led17.value(0)	#		17
+      led22.value(0)	#		22
   ### Stunde 14 
-     led21.value(1)	#	14	21
-     led12.value(1)	#		12
+      led21.value(1)	#	14	21
+      led12.value(1)	#		12
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -7461,7 +7461,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7472,14 +7472,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -7488,26 +7488,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -7516,14 +7516,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -7532,7 +7532,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7541,7 +7541,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7552,14 +7552,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -7568,14 +7568,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -7584,7 +7584,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -7593,18 +7593,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7613,7 +7613,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7624,7 +7624,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7635,7 +7635,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -7648,7 +7648,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -7657,7 +7657,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -7668,26 +7668,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -7696,14 +7696,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -7712,7 +7712,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -7721,7 +7721,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7732,14 +7732,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -7748,14 +7748,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -7764,7 +7764,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -7773,18 +7773,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -7793,7 +7793,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -7804,18 +7804,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -7828,7 +7828,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -7837,7 +7837,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -7848,7 +7848,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -7856,25 +7856,25 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 14 Led ausschalten 
-     led21.value(0)	#	14	21
-     led12.value(0)	#		12
+      led21.value(0)	#	14	21
+      led12.value(0)	#		12
   ### Stunde 15 
-     led21.value(1)	#	15	21
-     led12.value(1)	#		12
-     led22.value(1)	#		22
+      led21.value(1)	#	15	21
+      led12.value(1)	#		12
+      led22.value(1)	#		22
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -7974,7 +7974,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -7985,14 +7985,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8001,26 +8001,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -8029,14 +8029,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -8045,7 +8045,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8054,7 +8054,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8065,14 +8065,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8081,14 +8081,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -8097,7 +8097,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -8106,18 +8106,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8126,7 +8126,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8137,7 +8137,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8148,7 +8148,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8161,7 +8161,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -8170,7 +8170,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -8181,26 +8181,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -8209,14 +8209,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -8225,7 +8225,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -8234,7 +8234,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8245,14 +8245,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8264,11 +8264,11 @@ while True:
  ## Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -8277,7 +8277,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -8286,18 +8286,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -8306,7 +8306,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -8317,18 +8317,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -8341,7 +8341,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -8350,7 +8350,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -8361,7 +8361,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -8369,26 +8369,26 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 15 Led ausschalten 
-     led21.value(0)	#	15	21
-     led12.value(0)	#		12
-     led22.value(0)	#		22
+      led21.value(0)	#	15	21
+      led12.value(0)	#		12
+      led22.value(0)	#		22
   ### Stunde 16 
-     led21.value(1)	#	16	21
-     led12.value(1)	#		12
-     led17.value(1)	#		17
+      led21.value(1)	#	16	21
+      led12.value(1)	#		12
+      led17.value(1)	#		17
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##    Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -8488,7 +8488,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8499,14 +8499,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8515,26 +8515,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -8543,14 +8543,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -8559,7 +8559,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8568,7 +8568,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8579,14 +8579,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8595,14 +8595,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -8611,7 +8611,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -8620,18 +8620,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8640,7 +8640,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8651,7 +8651,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8662,7 +8662,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -8675,7 +8675,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -8684,7 +8684,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -8695,26 +8695,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -8723,14 +8723,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -8739,7 +8739,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -8748,7 +8748,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -8759,14 +8759,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -8775,14 +8775,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -8791,7 +8791,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -8800,18 +8800,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -8820,7 +8820,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -8831,18 +8831,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -8855,7 +8855,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -8864,7 +8864,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -8875,7 +8875,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -8883,27 +8883,27 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 16 Led ausschalten 
-     led21.value(0)	#	16	21
-     led12.value(0)	#		12
-     led17.value(0)	#		17
+      led21.value(0)	#	16	21
+      led12.value(0)	#		12
+      led17.value(0)	#		17
   ### Stunde 17 
-     led21.value(1)	#	17	21
-     led12.value(1)	#		12
-     led17.value(1)	#		17
-     led22.value(1)	#		22
+      led21.value(1)	#	17	21
+      led12.value(1)	#		12
+      led17.value(1)	#		17
+      led22.value(1)	#		22
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -9003,7 +9003,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9014,14 +9014,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9030,26 +9030,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -9058,14 +9058,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -9074,7 +9074,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9083,7 +9083,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9094,14 +9094,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9110,14 +9110,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -9126,7 +9126,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -9135,18 +9135,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9155,7 +9155,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9166,7 +9166,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9177,7 +9177,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9190,7 +9190,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -9199,7 +9199,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -9210,26 +9210,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -9238,14 +9238,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -9254,7 +9254,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -9263,7 +9263,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9274,14 +9274,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9290,14 +9290,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -9306,7 +9306,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -9315,18 +9315,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -9335,7 +9335,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -9346,18 +9346,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -9370,7 +9370,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -9379,7 +9379,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -9390,7 +9390,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -9398,26 +9398,26 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 17 Led ausschalten 
-     led21.value(0)	#	17	21
-     led12.value(0)	#		12
-     led17.value(0)	#		17
-     led22.value(0)	#		22
+      led21.value(0)	#	17	21
+      led12.value(0)	#		12
+      led17.value(0)	#		17
+      led22.value(0)	#		22
   ### Stunde 18 
-     led21.value(1)	#	18	21
-     led7.value(1)	#		7
-   # Minuten ##
- ## Minute 1
+      led21.value(1)	#	18	21
+      led7.value(1)	#		7
+   #  Minuten ##
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -9517,7 +9517,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9528,14 +9528,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9544,26 +9544,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -9572,14 +9572,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -9588,7 +9588,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9597,7 +9597,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9608,14 +9608,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9624,14 +9624,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -9640,7 +9640,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -9649,18 +9649,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9669,7 +9669,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9680,7 +9680,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9691,7 +9691,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -9704,7 +9704,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -9713,7 +9713,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -9724,26 +9724,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -9752,14 +9752,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -9768,7 +9768,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -9777,7 +9777,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -9788,14 +9788,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -9804,14 +9804,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -9820,7 +9820,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -9829,18 +9829,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -9849,7 +9849,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -9860,18 +9860,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -9884,7 +9884,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -9893,7 +9893,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -9904,7 +9904,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -9912,25 +9912,25 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 18 Led ausschalten 
-     led21.value(0)	#	18	21
-     led7.value(0)	#		7
+      led21.value(0)	#	18	21
+      led7.value(0)	#		7
    ### Stunde 19 
-     led21.value(1)	#	19	21
-     led7.value(1)	#		7
-     led22.value(1)	#		22
+      led21.value(1)	#	19	21
+      led7.value(1)	#		7
+      led22.value(1)	#		22
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -10030,7 +10030,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10041,14 +10041,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10057,26 +10057,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -10085,14 +10085,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -10101,7 +10101,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10110,7 +10110,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10121,14 +10121,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10137,14 +10137,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -10153,7 +10153,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -10162,18 +10162,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10182,7 +10182,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10193,7 +10193,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10204,7 +10204,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10217,7 +10217,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -10226,7 +10226,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -10237,26 +10237,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -10265,14 +10265,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -10281,7 +10281,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -10290,7 +10290,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10301,14 +10301,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10317,14 +10317,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -10333,7 +10333,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -10342,18 +10342,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -10362,7 +10362,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -10373,18 +10373,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -10397,7 +10397,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -10406,7 +10406,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -10417,7 +10417,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -10425,24 +10425,24 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 19 Led ausschalten 
-     led21.value(0)	#	19	21
-     led7.value(0)	#		7
-     led22.value(0)	#		22
+      led21.value(0)	#	19	21
+      led7.value(0)	#		7
+      led22.value(0)	#		22
   ### Stunde 20 
-     led16.value(1)	#	20	16
+      led16.value(1)	#	20	16
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -10542,7 +10542,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10553,14 +10553,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10569,26 +10569,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -10597,14 +10597,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -10613,7 +10613,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10622,7 +10622,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10633,14 +10633,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10649,14 +10649,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -10665,7 +10665,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##   Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -10674,18 +10674,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10694,7 +10694,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10705,7 +10705,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10716,7 +10716,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -10729,7 +10729,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -10738,7 +10738,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -10749,26 +10749,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -10777,14 +10777,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -10793,7 +10793,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -10802,7 +10802,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -10813,14 +10813,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -10829,14 +10829,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -10845,7 +10845,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -10854,18 +10854,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -10874,7 +10874,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -10885,7 +10885,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
@@ -10896,7 +10896,7 @@ while True:
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -10909,7 +10909,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -10918,7 +10918,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -10929,7 +10929,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -10937,21 +10937,21 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 20 Led ausschalten 
-     led16.value(0)	#	20	16
+      led16.value(0)	#	20	16
   ### Stunde 21 
-     led16.value(1)	#	21	16
-     led22.value(1)	#		22
+      led16.value(1)	#	21	16
+      led22.value(1)	#		22
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
  ##  Minute 3 
       led24.value(1)	#	3	24	GP27	
@@ -11053,7 +11053,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11064,14 +11064,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11080,26 +11080,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -11108,14 +11108,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -11124,7 +11124,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11133,7 +11133,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11144,14 +11144,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11160,14 +11160,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -11176,7 +11176,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -11185,18 +11185,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11205,7 +11205,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11216,7 +11216,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11227,7 +11227,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11240,7 +11240,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -11249,7 +11249,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -11260,26 +11260,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -11288,14 +11288,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -11304,7 +11304,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -11313,7 +11313,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11324,14 +11324,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11340,14 +11340,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -11356,7 +11356,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -11365,18 +11365,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -11385,7 +11385,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -11396,18 +11396,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##  Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -11420,7 +11420,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -11429,7 +11429,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -11440,7 +11440,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -11448,24 +11448,24 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 21 Led ausschalten 
-     led16.value(0)	#	21	16
-     led22.value(0)	#		22
+      led16.value(0)	#	21	16
+      led22.value(0)	#		22
   ### Stunde 22 
-     led16.value(1)	#	22	16
-     led17.value(1)	#		17
+      led16.value(1)	#	22	16
+      led17.value(1)	#		17
    # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -11565,7 +11565,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11576,14 +11576,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11592,26 +11592,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -11620,14 +11620,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -11636,7 +11636,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11645,7 +11645,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11656,14 +11656,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11672,14 +11672,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -11688,7 +11688,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -11697,18 +11697,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11717,7 +11717,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11728,7 +11728,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11739,7 +11739,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -11752,7 +11752,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -11761,7 +11761,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -11772,26 +11772,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -11800,14 +11800,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -11816,7 +11816,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -11825,7 +11825,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -11836,14 +11836,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -11852,14 +11852,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -11868,7 +11868,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -11877,7 +11877,7 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
@@ -11888,7 +11888,7 @@ while True:
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -11897,7 +11897,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -11908,18 +11908,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -11932,7 +11932,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -11941,7 +11941,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -11952,7 +11952,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -11960,25 +11960,25 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 22 Led ausschalten 
-     led16.value(0)	#	22	16
-     led17.value(0)	#		17
+      led16.value(0)	#	22	16
+      led17.value(0)	#		17
   ### Stunde 23 
-     led16.value(1)	#	23	16
-     led17.value(1)	#		17
-     led22.value(1)	#		22
+      led16.value(1)	#	23	16
+      led17.value(1)	#		17
+      led22.value(1)	#		22
   # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -12078,7 +12078,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12089,14 +12089,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12105,26 +12105,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -12133,14 +12133,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -12149,7 +12149,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12158,7 +12158,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12169,14 +12169,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12185,14 +12185,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -12201,7 +12201,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##   Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -12210,18 +12210,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12230,7 +12230,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12241,7 +12241,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12252,7 +12252,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12265,7 +12265,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -12274,7 +12274,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -12285,26 +12285,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -12313,14 +12313,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -12329,7 +12329,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -12338,7 +12338,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12349,14 +12349,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12365,14 +12365,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -12381,7 +12381,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -12390,18 +12390,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -12410,7 +12410,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -12421,7 +12421,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
@@ -12432,7 +12432,7 @@ while True:
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -12445,7 +12445,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -12454,7 +12454,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -12465,7 +12465,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
@@ -12473,25 +12473,25 @@ while True:
       led18.value(0)	
       led13.value(0)
   ### Stunde 23 Led ausschalten 
-     led16.value(0)	#	23	16
-     led17.value(0)	#		17
-     led22.value(0)	#		22
+      led16.value(0)	#	23	16
+      led17.value(0)	#		17
+      led22.value(0)	#		22
    ### Stunde 24 
-     led16.value(1)	#	24	16
-     led12.value(1)	#		12
+      led16.value(1)	#	24	16
+      led12.value(1)	#		12
   # Minuten ##
- ## Minute 1
+ ##   Minute 1
       utime.sleep(60)
       led24.value(1)	#	1	24	GP27	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led24.value(0)
- ##  Minute 2     
+ ##   Minute 2     
       led19.value(1)	#	2	19	GP19	
       utime.sleep(60)
-     # jetzt alle LED/Pins zurücksetzen/ausschalten
+      # jetzt alle LED/Pins zurücksetzen/ausschalten
       led19.value(0)
- ##  Minute 3 
+ ##   Minute 3 
       led24.value(1)	#	3	24	GP27	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
@@ -12591,7 +12591,7 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 17
+ ##   Minute 17
       led23.value(1)	#	17	23	GP26	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12602,14 +12602,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 18
+ ##   Minute 18
       led23.value(1)	#	18	23	GP26	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led9.value(0)
- ## Minute 19
+ ##   Minute 19
       led23.value(1)	#	19	23	GP26	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12618,26 +12618,26 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 20
+ ##   Minute 20
       led18.value(1)	#	20	18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)
- ## Minute 21
+ ##   Minute 21
       led16.value(1)	#	21	16	GP16	
       led24.value(1)	#		24	GP27	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led24.value(0)
- ## Minute 22
+ ##   Minute 22
       led16.value(1)	#	22	16	GP18	
       led19.value(1)	#		19	GP19	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led16.value(0)	
       led19.value(0)
- ## Minute 23
+ ##   Minute 23
       led16.value(1)	#	23	16	GP18	
       led19.value(1)	#		19	GP19	
       led24.value(1)	#		24	GP27	
@@ -12646,14 +12646,14 @@ while True:
       led16.value(0)	
       led19.value(0)	
       led24.value(0)	
- ## Minute 24
+ ##   Minute 24
       led18.value(1)	#	24	18	GP18	
       led14.value(1)	#		14	GP14	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led14.value(0)
- ## Minute 25
+ ##   Minute 25
       led18.value(1)	#	25	18	GP18	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27	
@@ -12662,7 +12662,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 26
+ ##   Minute 26
       led18.value(1)	#	26	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12671,7 +12671,7 @@ while True:
       led18.value(0)	
       led14.value(0)	
       led19.value(0)
- ## Minute 27
+ ##   Minute 27
       led18.value(1)	#	27	18	GP18	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12682,14 +12682,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 28
+ ##   Minute 28
       led18.value(1)	#	28	18	GP18	
       led9.value(1)	#		9	GP9	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led18.value(0)	
       led9.value(0)
- ## Minute29
+ ##   Minute29
       led18.value(1)	#	29	18	GP18	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12698,14 +12698,14 @@ while True:
       led18.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 30
+ ##   Minute 30
       led23	.value(1)	#	30	23	GP26	
       led18	.value(1)	#		18	GP18	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23	.value(0)	
       led18	.value(0)
- ## Minute 31
+ ##   Minute 31
       led23.value(1)	#	31	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
@@ -12714,7 +12714,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led24.value(0)
-## Minute 32
+##    Minute 32
       led23.value(1)	#	32	23	GP26	
       led18.value(1)	#		18	GP18	
       led19.value(1)	#		19	GP19	
@@ -12723,18 +12723,18 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led19.value(0)
- ## Minute 33
+ ##   Minute 33
       led23.value(1)	#	33	23	GP26	
       led18.value(1)	#		18	GP18	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-        utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led18.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 34
+ ##   Minute 34
       led23.value(1)	#	34	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12743,7 +12743,7 @@ while True:
       led23.value(0)		
       led18.value(0)	
       led14.value(0)
- ## Minute 35
+ ##   Minute 35
       led23.value(1)	#	35	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12754,7 +12754,7 @@ while True:
       led18.value(0)	
       led14.value(0)		
       led24.value(0)
- ## Minute 36
+ ##   Minute 36
       led23.value(1)	#	36	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12765,7 +12765,7 @@ while True:
       led18.value(0)		
       led14.value(0)		
       led19.value(0)
- ## Minute 37
+ ##   Minute 37
       led23.value(1)	#	37	23	GP26	
       led18.value(1)	#		18	GP18	
       led14.value(1)	#		14	GP14	
@@ -12778,7 +12778,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 38
+ ##   Minute 38
       led23.value(1)	#	38	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -12787,7 +12787,7 @@ while True:
       led23.value(0)	
       led18.value(0)	
       led9.value(0)
- ## Minute 39
+ ##   Minute 39
       led23.value(1)	#	39	23	GP26	
       led18.value(1)	#		18	GP18	
       led9.value(1)	#		9	GP9	
@@ -12798,26 +12798,26 @@ while True:
       led18.value(0)
       led9.value(0)	
       led24.value(0)
- ## Minute 40
+ ##   Minute 40
       led13.value(1)	#	40	13	GP13	
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
- ## Minute 41
+ ##   Minute 41
       led13.value(1)	#	41	13	GP13	
       led24.value(1)	#		24	GP27
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led24.value(0)
- ## Minute 42
+ ##   Minute 42
       led13.value(1)	#	42	13	GP13	
       led19.value(1)	#		19	GP19
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led19.value(0)
- ## Minute 43
+ ##   Minute 43
       led13.value(1)	#	43	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -12826,14 +12826,14 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 44
+ ##   Minute 44
       led13.value(1)	#	44	13	GP13	
       led14.value(1)	#		14	GP14
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)
       led14.value(0)
- ## Minute 45
+ ##   Minute 45
       led13.value(1)	#	45	13	GP13	
       led14.value(1)	#		14	GP14	
       led24.value(1)	#		24	GP27
@@ -12842,7 +12842,7 @@ while True:
       led13.value(0)
       led14.value(0)	
       led24.value(0)
- ## Minute 46
+ ##   Minute 46
       led13.value(1)	#	46	13	GP13	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
@@ -12851,7 +12851,7 @@ while True:
       led13.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 47
+ ##   Minute 47
       led13.value(1)	#	47	13	GP13	
       led14.value(1)	#		14	GP14	
       led19.value(1)	#		19	GP19	
@@ -12862,14 +12862,14 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 48
+ ##   Minute 48
       led13.value(1)	#	48	13	GP13	
       led9.value(1)	#		9	GP9
       utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten   
       led13.value(0)	#	48	13	GP13	
       led9.value(0)
- ## Minute 49
+ ##   Minute 49
       led13.value(1)	#	49	13	GP13	
       led9.value(1)	#		9	GP9	
       led24.value(1)	#		24	GP27	
@@ -12878,14 +12878,14 @@ while True:
       led13.value(0)	
       led9.value(0)		
       led24.value(0)
- ## Minute 50
+ ##   Minute 50
       led13.value(1)	#	50	13	GP13	
       led23.value(1)	#		23	GP26	
-     utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)
- ## Minute 51
+ ##   Minute 51
       led13.value(1)	#	51	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27
@@ -12894,7 +12894,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led24.value(0)
- ## Minute 52
+ ##   Minute 52
       led13.value(1)	#	52	13	GP13	
       led19.value(1)	#		19	GP19	
       led13.value(1)	#		13	GP13
@@ -12903,18 +12903,18 @@ while True:
       led13.value(0)	
       led19.value(0)	
       led13.value(0)
- ## Minute 53
+ ##   Minute 53
       led23.value(1)	#	53	23	GP26	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19	
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led23.value(0)	
       led23.value(0)	
       led24.value(0)	
       led19.value(0)
- ## Minute 54
+ ##   Minute 54
       led13.value(1)	#	54	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14
@@ -12923,7 +12923,7 @@ while True:
       led13.value(0)	
       led23.value(0)		
       led14.value(0)
- ## Minute 55
+ ##   Minute 55
       led13.value(1)	#	55	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -12934,18 +12934,18 @@ while True:
       led23.value(0)	
       led14.value(0)	
       led24.value(0)
- ## Minute 56
+ ##   Minute 56
       led13.value(1)	#	56	13	GP13	
       led23.value(1)	#		23	GP26	
       led24.value(1)	#		24	GP27	
       led19.value(1)	#		19	GP19
-       utime.sleep(60)
+      utime.sleep(60)
       # jetzt alle LED/Pins zurücksetzen/ausschalten
       led13.value(0)	
       led23.value(0)		
       led24.value(0)		
       led19.value(0)
- ## Minute 57
+ ##   Minute 57
       led13.value(1)	#	57	13	GP13	
       led23.value(1)	#		23	GP26	
       led14.value(1)	#		14	GP14	
@@ -12958,7 +12958,7 @@ while True:
       led14.value(0)	
       led19.value(0)	
       led24.value(0)
- ## Minute 58
+ ##   Minute 58
       led13.value(1)	#	58	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -12967,7 +12967,7 @@ while True:
       led13.value(0)	
       led23.value(0)	
       led9.value(0)
- ## Minute 59
+ ##   Minute 59
       led13.value(1)	#	59	13	GP13	
       led23.value(1)	#		23	GP26	
       led9.value(1)	#		9	GP9	
@@ -12978,7 +12978,7 @@ while True:
       led23.value(0)	
       led9.value(0)	
       led24.value(0)
- ## Minute 60
+ ##   Minute 60
       led18.value(1)	#	60	18	GP18	
       led13.value(1)	#		13	GP13
       utime.sleep(60)
