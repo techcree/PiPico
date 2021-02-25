@@ -31,10 +31,10 @@
 #	3	  	GP3				wird nicht benötigt		
 #	4	  	GP4				wird nicht benötigt		
 #	5	  	GP5				wird nicht benötigt		
-#	6 		GP6		    8	Stunden	10 'er	
+#	6 	 	GP6		    8	Stunden	10 'er	
 #	7	  	GP7		  	8	Stunden		
-#	8	   	GP8		   	8	Minuten	10 'er	
-#	9	    GP9		  	8	Minuten		
+#	8	  	GP8		   	8	Minuten	10 'er	
+#	9	   GP9		  	8	Minuten		
 #	10		GP10				wird nicht benötigt		
 #	11		GP11			4	Stunden	10 'er	
 #	12		GP12			4	Stunden		
@@ -1715,5 +1715,195 @@ while True:
 
   ### Stunde 2 Led ausschalten 
       led17.value(0)	
+   
+#*****
 
-##### und so weiter...
+
+   ### Stunde 3
+       led22.value(1)	#	3	22
+       led17.value(1)	#		17
+   # Minuten ##
+#>
+   ### Stunde 3 Led ausschalten 
+       led22.value(0)	#	3	22
+       led17.value(0)	#		17
+   ### Stunde 4
+       led12.value(1)	#	4	12
+   # Minuten ##
+#>
+   ### Stunde 4 Led ausschalten 
+      led12.value(0)	
+   ### Stunde 5
+      led12.value(1)	#	5	12
+      led22.value(1)	#		22
+   # Minuten ##
+#>
+   ### Stunde 5 Led ausschalten 
+      led12.value(0)	#	5	12
+      led22.value(0)	#		22
+   ### Stunde 6
+      led12.value(1)	#	6	12
+      led17.value(1)	#		17
+   # Minuten ##
+#>
+  ### Stunde 6 Led ausschalten 
+      led12.value(0)	#	6	12
+      led17.value(0)	#		17
+  ### Stunde 7
+      led12.value(1)	#	7	12
+      led17.value(1)	#		17
+      led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 7 Led ausschalten 
+      led12.value(0)	#	7	12
+      led17.value(0)	#		17
+      led22.value(0)	#		22
+   ### Stunde 8
+      led7.value(1)	#	8	7
+   # Minuten ##
+#>
+  ### Stunde 8 Led ausschalten 
+      led7.value(0)	
+  ### Stunde 9 
+      led7.value(1)	#	9	7
+      led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 9 Led ausschalten 
+      led7.value(0)	#	9	7
+      led22.value(0)	#		22
+  ### Stunde 10 
+      led21.value(1)	#	10	21
+      led17.value(1)	#		17
+   # Minuten ##
+#>
+  ### Stunde 10 Led ausschalten 
+      led21.value(0)	#	10	21
+      led17.value(0)	#		17
+  ### Stunde 11 
+      led21.value(1)	#	11	21
+      led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 11 Led ausschalten 
+     led21.value(0)	#	11	21
+     led22.value(0)	#		22
+  ### Stunde 12 
+     led21.value(1)	#	12	21
+     led17.value(1)	#		17
+   # Minuten ##
+#>
+  ### Stunde 12 Led ausschalten 
+     led21.value(0)	#	12	21
+     led17.value(0)	#		17
+  ### Stunde 13 
+     led21.value(1)	#	13	21
+     led17.value(1)	#		17
+     led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 13 Led ausschalten 
+     led21.value(0)	#	13	21
+     led17.value(0)	#		17
+     led22.value(0)	#		22
+  ### Stunde 14 
+     led21.value(1)	#	14	21
+     led12.value(1)	#		12
+   # Minuten ##
+#>
+  ### Stunde 14 Led ausschalten 
+     led21.value(0)	#	14	21
+     led12.value(0)	#		12
+  ### Stunde 15 
+     led21.value(1)	#	15	21
+     led12.value(1)	#		12
+     led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 15 Led ausschalten 
+     led21.value(0)	#	15	21
+     led12.value(0)	#		12
+     led22.value(0)	#		22
+  ### Stunde 16 
+     led21.value(1)	#	16	21
+     led12.value(1)	#		12
+     led17.value(1)	#		17
+   # Minuten ##
+#>
+  ### Stunde 16 Led ausschalten 
+     led21.value(0)	#	16	21
+     led12.value(0)	#		12
+     led17.value(0)	#		17
+  ### Stunde 17 
+     led21.value(1)	#	17	21
+     led12.value(1)	#		12
+     led17.value(1)	#		17
+     led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 17 Led ausschalten 
+     led21.value(0)	#	17	21
+     led12.value(0)	#		12
+     led17.value(0)	#		17
+     led22.value(0)	#		22
+  ### Stunde 18 
+     led21.value(1)	#	18	21
+     led7.value(1)	#		7
+   # Minuten ##
+#>
+  ### Stunde 18 Led ausschalten 
+     led21.value(0)	#	18	21
+     led7.value(0)	#		7
+   ### Stunde 19 
+     led21.value(1)	#	19	21
+     led7.value(1)	#		7
+     led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 19 Led ausschalten 
+     led21.value(0)	#	19	21
+     led7.value(0)	#		7
+     led22.value(0)	#		22
+  ### Stunde 20 
+     led16.value(1)	#	20	16
+   # Minuten ##
+#>
+  ### Stunde 20 Led ausschalten 
+     led16.value(0)	#	20	16
+  ### Stunde 21 
+     led16.value(1)	#	21	16
+     led22.value(1)	#		22
+   # Minuten ##
+#>
+  ### Stunde 21 Led ausschalten 
+     led16.value(0)	#	21	16
+     led22.value(0)	#		22
+  ### Stunde 22 
+     led16.value(1)	#	22	16
+     led17.value(1)	#		17
+   # Minuten ##
+#>
+  ### Stunde 22 Led ausschalten 
+     led16.value(0)	#	22	16
+     led17.value(0)	#		17
+  ### Stunde 23 
+     led16.value(1)	#	23	16
+     led17.value(1)	#		17
+     led22.value(1)	#		22
+  # Minuten ##
+#>
+  ### Stunde 23 Led ausschalten 
+     led16.value(0)	#	23	16
+     led17.value(0)	#		17
+     led22.value(0)	#		22
+   ### Stunde 24 
+     led16.value(1)	#	24	16
+     led12.value(1)	#		12
+  # Minuten ##
+#>
+  ### Stunde 24 Led ausschalten 
+     led16.value(0)	#	24	16
+     led12.value(0)	#		12
+
+##### ENDEder Schleife ######################################
