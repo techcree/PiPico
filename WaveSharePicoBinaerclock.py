@@ -111,9 +111,6 @@ stu = c
 
 
 while True:
-    stu = int(input("Stunden 1er?"))
-    min =  int(input("Minuten 1er?"))
-    sek = int(input("Sekunden 1er?"))
    
     if sek == 1:
         led00.value(1) 
