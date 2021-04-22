@@ -102,12 +102,12 @@ while True:
     d = t[3]&0x07  #week
     e = t[4]&0x3F  #day
     f = t[5]&0x1F  #mouth
-#    print("20%x/%02x/%02x %02x:%02x:%02x %s" %(t[6],t[5],t[4],t[2],t[1],t[0],w[t[3]-1]))
-    print(c, b, a)
+    print("20%x/%02x/%02x %02x:%02x:%02x %s" %(t[6],t[5],t[4],t[2],t[1],t[0],w[t[3]-1]))
 
-    sek = a
-    min = b
-    stu = c
+    sek = int("%2x" %a)
+    min = int("%2x" %b)
+    stu = int("%2x" %c)
+    print(stu, min, sek)
 #
 #alternate with input    
 #    stu = int(input("Stunden 1er?"))
