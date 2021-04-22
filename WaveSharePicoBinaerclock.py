@@ -5,7 +5,7 @@
 #
 # led00 GP0  [X]  (1)  sek1                 (40)  [ ] VBUS
 # led01 GP1  [X]  (2)  sek2                 (39)  [ ] VSYS
-#       GND  [ ]  (3)                       (38)  [X] GDN        LED Panel GDN
+#       GND  [ ]  (3)                       (38)  [X] GDN        lED Panel GDN
 # led02 GP2  [X]  (4)  sek4                 (37)  [ ] 3V3_EN
 # led03 GP3  [X]  (5)  sek8                 (36)  [X] 3V3(OUT)   RTC Power
 # led04 GP4  [X]  (6)  sek10                (35)  [ ] -
@@ -49,12 +49,12 @@ register = 0x00
 NowTime = b'\x00\x00\x15\x04\x21\x01\x21'
 w  = ["SUN","Mon","Tues","Wed","Thur","Fri","Sat"];
 #/dev/i2c-1
-bus = I2C(0)
+bus = I2C(1)
 def ds3231SetTime():
-	bus.writeto_mem(int(address),int(register),NowTime)
+    bus.writeto_mem(int(address),int(register),NowTime)
 
 def ds3231ReadTime():
-	return bus.readfrom_mem(int(address),int(register),7);
+    return bus.readfrom_mem(int(address),int(register),7);
 
 ds3231SetTime()
 
@@ -94,24 +94,26 @@ led21 = Pin(21, Pin.OUT) # std10 gelb (2)
 led22 = Pin(22, Pin.OUT) # std10 gelb (4)
 # std10 (8) gelb wird nicht benötigt
 #
-while 1:
-	t = ds3231ReadTime()
-	a = t[0]&0x7F  #sec
-	b = t[1]&0x7F  #min
-	c = t[2]&0x3F  #hour
-	d = t[3]&0x07  #week
-	e = t[4]&0x3F  #day
-	f = t[5]&0x1F  #mouth
-#	print("20%x/%02x/%02x %02x:%02x:%02x %s" %(t[6],t[5],t[4],t[2],t[1],t[0],w[t[3]-1]))
-	time.sleep(1)
-	
-sek = a
-min = b
-stu = c
-
-
 while True:
-   
+    t = ds3231ReadTime()
+    a = t[0]&0x7F  #sec
+    b = t[1]&0x7F  #min
+    c = t[2]&0x3F  #hour
+    d = t[3]&0x07  #week
+    e = t[4]&0x3F  #day
+    f = t[5]&0x1F  #mouth
+#    print("20%x/%02x/%02x %02x:%02x:%02x %s" %(t[6],t[5],t[4],t[2],t[1],t[0],w[t[3]-1]))
+    print(c, b, a)
+
+    sek = a
+    min = b
+    stu = c
+#
+#alternate with input    
+#    stu = int(input("Stunden 1er?"))
+#    min =  int(input("Minuten 1er?"))
+#    sek = int(input("Sekunden 1er?"))
+  
     if sek == 1:
         led00.value(1) 
     if sek == 2:
@@ -331,8 +333,7 @@ while True:
         led06.value(1)
         led00.value(1)
         led03.value(1)
-    if sek >= 60:
-        print("falsche Eingabe")
+###
     if min == 1:    
         led08.value(1)
     if min == 2:        
@@ -357,8 +358,7 @@ while True:
     if min == 9:
         led08.value(1)
         led11.value(1)
-    if min >= 10:
-        print("falsche Eingabe")        
+###        
     if min == 10:
         led12.value(1)
     if min == 11:
@@ -554,8 +554,7 @@ while True:
         led14.value(1)
         led08.value(1)
         led11.value(1)
-    if min >= 60:
-         print("falsche Eingabe")
+###
     if stu == 1:        
         led16.value(1)
     if stu == 2:
@@ -580,8 +579,7 @@ while True:
     if stu == 9:
         led16.value(1)
         led19.value(1)
-    if stu >= 10:   
-        print("falsche Eingabe")
+##
     if stu == 10:        
         led20.value(1)
     if stu == 11:
@@ -632,36 +630,30 @@ while True:
     if stu == 24: #??
         led21.value(1)
         led18.value(1)
-    if stu >= 30:
-        print("falsche Eingabe")
-#nicht verwendete LED
-#        led22.value(1)
-#        led24.value(1)
-    else:
-        utime.sleep(1)
-#        print("Fertig")
-        #Reset
-        led00.value(0) 
-        led01.value(0) 
-        led02.value(0) 
-        led03.value(0) 
-        led04.value(0) 
-        led05.value(0) 
-        led06.value(0) 
-        led07.value(0)
-        led08.value(0) 
-        led09.value(0)
-        led10.value(0)
-        led11.value(0)
-        led12.value(0)
-        led13.value(0)
-        led14.value(0)
-#        led15.value(0)
-        led16.value(0)
-        led17.value(0)
-        led18.value(0)
-        led19.value(0)
-        led20.value(0)
-        led21.value(0)
-        led22.value(0)
-#        led24.value(0)
+ 
+    time.sleep(1)
+#Reset LEDS
+    led00.value(0) 
+    led01.value(0) 
+    led02.value(0) 
+    led03.value(0) 
+    led04.value(0) 
+    led05.value(0) 
+    led06.value(0) 
+    led07.value(0)
+    led08.value(0) 
+    led09.value(0)
+    led10.value(0)
+    led11.value(0)
+    led12.value(0)
+    led13.value(0)
+    led14.value(0)
+#    led15.value(0)
+    led16.value(0)
+    led17.value(0)
+    led18.value(0)
+    led19.value(0)
+    led20.value(0)
+    led21.value(0)
+    led22.value(0)
+#    led24.value(0)
